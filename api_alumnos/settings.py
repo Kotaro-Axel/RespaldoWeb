@@ -40,6 +40,8 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:4200',
   'http://127.0.0.1:4200',
+  'https://angular-deploy-d0789.web.app',
+  'https://angular-deploy-d0789.web.app/LandingHome',
 )
 
 ROOT_URLCONF = 'api_alumnos.urls'
