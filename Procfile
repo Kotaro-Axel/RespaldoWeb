@@ -1,0 +1,1 @@
+web: gunicorn api_alumnos.wsgi:application --pythonpath app --log-file -
