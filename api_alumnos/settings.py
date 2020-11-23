@@ -89,7 +89,7 @@ DATABASES = {
     #     'HOST': 'ec2-34-234-185-150.compute-1.amazonaws.com',
     #     'PORT': '5432',
     # }
-    default': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'webdb',
         'USER': 'webuserdb',
