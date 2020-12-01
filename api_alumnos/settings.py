@@ -81,22 +81,24 @@ WSGI_APPLICATION = 'api_alumnos.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'dbtpsnc3oiv4m1',
-    #     'USER': 'kzplxdvydljvus',
-    #     'PASSWORD': '873a83e88aa1e9092740eba2fa58595bfe8a36ef9c5ca86e800b86230568d24f',
-    #     'HOST': 'ec2-34-234-185-150.compute-1.amazonaws.com',
-    #     'PORT': '5432',
-    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'webdb',
-        'USER': 'webuserdb',
-        'PASSWORD': 'web7132',
-        'HOST': '172.31.55.246',
+        'NAME': 'dbtpsnc3oiv4m1',
+        'USER': 'kzplxdvydljvus',
+        'PASSWORD': '873a83e88aa1e9092740eba2fa58595bfe8a36ef9c5ca86e800b86230568d24f',
+        'HOST': 'ec2-34-234-185-150.compute-1.amazonaws.com',
         'PORT': '5432',
-    }      
+    }
+    
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'webdb',
+    #     'USER': 'webuserdb',
+    #     'PASSWORD': 'web7132',
+    #     'HOST': '172.31.55.246',
+    #     'PORT': '5432',
+    # }      
 }
 
 
