@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'api_alumnos.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-from dj_database_url
+import dj_database_url
 DATABASES = {
     #HerokuDB
     'default': dj_database_url.config(
