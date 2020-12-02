@@ -53,7 +53,6 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:4200',
   'http://127.0.0.1:4200',
   'https://angular-deploy-d0789.web.app',
-  'https://angular-deploy-d0789.web.app/LandingHome',
 )
 
 ROOT_URLCONF = 'api_alumnos.urls'
@@ -81,24 +80,15 @@ WSGI_APPLICATION = 'api_alumnos.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
+    #HerokuDB
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbtpsnc3oiv4m1',
-        'USER': 'kzplxdvydljvus',
-        'PASSWORD': '873a83e88aa1e9092740eba2fa58595bfe8a36ef9c5ca86e800b86230568d24f',
-        'HOST': 'ec2-34-234-185-150.compute-1.amazonaws.com',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
         'PORT': '5432',
-    }
-    
-
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'webdb',
-    #     'USER': 'webuserdb',
-    #     'PASSWORD': 'web7132',
-    #     'HOST': '172.31.55.246',
-    #     'PORT': '5432',
-    # }      
+    }   
 }
 
 
