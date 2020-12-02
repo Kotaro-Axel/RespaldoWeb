@@ -80,7 +80,6 @@ WSGI_APPLICATION = 'api_alumnos.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-from unipath import Path
 from dj_database_url import parse as db_url
 DATABASES = {
     #HerokuDB
