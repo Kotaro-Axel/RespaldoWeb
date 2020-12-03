@@ -7,7 +7,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ["54.237.111.188"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -81,26 +81,15 @@ WSGI_APPLICATION = 'api_alumnos.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-
-    #Heroku
+    #AWS DB
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbtpsnc3oiv4m1',
-        'USER': 'kzplxdvydljvus',
-        'PASSWORD': '873a83e88aa1e9092740eba2fa58595bfe8a36ef9c5ca86e800b86230568d24f',
-        'HOST': 'ec2-34-234-185-150.compute-1.amazonaws.com',
+        'NAME': 'webdb',
+        'USER': 'webuserdb',
+        'PASSWORD': 'web7132',
+        'HOST': 'localhost',
         'PORT': '5432',
-    }
-
-    #AWS
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'webdb',
-    #     'USER': 'webuserdb',
-    #     'PASSWORD': 'web7132',
-    #     'HOST': 'localhost',
-    #     'PORT': '5432',
-    # }      
+     }      
 }
 
 
