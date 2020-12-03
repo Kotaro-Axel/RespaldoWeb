@@ -51,9 +51,9 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:4200',
+  'http://54.174.50.37/',
   'http://127.0.0.1:4200',
-  'https://angular-deploy-d0789.web.app',
-  #'https://angular-deploy-d0789.web.app/LandingHome',
+  'http://ec2-54-174-50-37.compute-1.amazonaws.com/',
 )
 
 ROOT_URLCONF = 'api_alumnos.urls'
