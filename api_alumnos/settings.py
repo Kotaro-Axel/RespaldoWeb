@@ -7,7 +7,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ["https://angular-deploy-d0789.firebaseapp.com/"]
+ALLOWED_HOSTS = ["https://angular-deploy-d0789.firebaseapp.com/", "https://angular-deploy-d0789.web.app/"]
 
 
 # Application definition
@@ -53,6 +53,7 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:4200',
   'http://127.0.0.1:4200',
   'https://angular-deploy-d0789.web.app',
+  'https://angular-deploy-d0789.firebaseapp.com/',
 )
 
 ROOT_URLCONF = 'api_alumnos.urls'
