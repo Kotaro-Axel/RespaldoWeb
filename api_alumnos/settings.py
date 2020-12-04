@@ -51,9 +51,11 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:4200',
-  'http://54.174.50.37/',
+  'http://54.174.50.37:4200',
   'http://127.0.0.1:4200',
-  'http://ec2-54-174-50-37.compute-1.amazonaws.com/',
+  'http://ec2-54-174-50-37.compute-1.amazonaws.com:4200',
+  'http://my-alumns.ddns.net:4200',
+
 )
 
 ROOT_URLCONF = 'api_alumnos.urls'
